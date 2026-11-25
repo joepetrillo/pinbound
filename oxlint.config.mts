@@ -24,7 +24,11 @@ export default defineConfig({
     landmines,
     antiSlop,
   ],
-  ignorePatterns: [...core.ignorePatterns, ".agents/**/*"],
+  ignorePatterns: [
+    ...core.ignorePatterns,
+    ".agents/**/*",
+    "src/components/ui/**/*",
+  ],
   jsPlugins: [
     ...jsPlugins.jsPlugins,
     ...shadcn.jsPlugins,
